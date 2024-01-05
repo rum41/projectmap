@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+.sidebar{
+    position: absolute; /*定位*/
+    height: 100%;
+    width: 20%;
+    background-color: #FFB5B5;
+    box-shadow: 3px 3px 5px 1px rgba(255, 255, 255,1);
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+
+    /* 選單移動 */
+    transform: translateX(-100%); /*移動方向*/
+    transition: 0.5s; /*延遲*/
+
+    /*層級等級*/
+    z-index: 2; 
+}
+#map{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    z-index: 1;
+}
+.MenuArrow{
+    position: absolute;
+    height: 70px;
+    width: 20px;
+    display: flex;
+    top:0;
+    bottom:0;
+    color: white;
+    left: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    background-color:#FFB5B5;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: 3px 3px 5px 1px rgba(255, 255, 255,1);
+    border-radius: 0 5px 5px 0px;
+    z-index: 2;
+}
+
+.sidebar nav{
+    border-bottom: 1px black;
+}
+.sidebar nav ul a{
+    font-size: 18px;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    border-bottom:  1px solid;
+    padding: 10px;
+    z-index: 2;
+}
+.sidebar nav i{
+    float: right;
+}
+.sidebar nav a:hover{
+    background-color: white;
+}
+.TextSearchContent{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+#TextSearch ul{
+    display: none;
+}
+input{
+    font-size: 18px
+}
+.Hidden{
+    display: none;
+    z-index: -1;
+}
+
+#MenuAction:checked + .sidebar{
+    transform: translateX(0);
+    .MenuArrow .fa-solid{
+        transform: rotate(180deg);
+    }
+}
+
+.Legend{
+    bottom: 3%;
+    right: 3%;
+    display: flex;
+    z-index: 5;
+    position: fixed;
+    background-color:hsl(0, 0%, 100%, 60%);
+    padding: 5;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+
+}
+.colorblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.color{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    
+}
+.text{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.custom-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marker-inner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

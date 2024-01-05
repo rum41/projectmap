@@ -1,0 +1,105 @@
+<!DOCTYPE ...>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>新竹屋齡地圖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data\1704293754.ico" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://kit.fontawesome.com/71e6de3f9e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="node_modules/leaflet-graphicscale/dist/Leaflet.GraphicScale.min.js"></script>
+    <link rel="stylesheet" href="node_modules\leaflet-graphicscale\dist\Leaflet.GraphicScale.min.css">
+    
+    <!-- marker cluster -->
+    <script src="Leaflet.markercluster-1.4.1/dist/leaflet.markercluster-src.js"></script>
+    <script src="Leaflet.markercluster-1.4.1/src/MarkerCluster.js"></script>
+    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1\dist\MarkerCluster.css"/>
+    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1\dist\MarkerCluster.Default.css" />
+    <!-- geocoder -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" /> -->
+    <!-- <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/esri-leaflet-geocoder/dist/esri-leaflet-geocoder.js"></script>    -->
+    
+</head>
+<body>
+    
+    <div id='map'>
+        <script type="module" src="./scripts/map.js"></script>
+    </div>
+    <script src="./scripts/start.js"></script>
+    <script type="module" src="./scripts/click.js"></script>
+
+
+    
+    
+    <!-- <input type="checkbox" id="MenuAction" class="Hidden">
+    
+    
+    
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li id="TextSearch">
+                    <a href="#" id="Opencontext">文字搜尋</a>
+                    <ul>
+                        <li class="TextSearchContent">
+                            <input type="text" placeholder="請輸入地址" id="textbox">
+                            <button class="TSCbuttom" id='serachbuttom'><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </li>
+                    </ul>
+                </li>
+            
+
+            <a href="#" id="test">選擇搜尋</a>
+            </ul>
+        </nav>
+                
+
+        <div class="MenuArrow">
+            <label for="MenuAction">
+                <i class="fa-solid fa-arrow-right"></i>
+            </label>
+        </div> -->
+        
+        
+        
+        
+    <!-- </div> -->
+    <div class="Legend">
+        <div class="colorblock">
+            <div class="color" style="background-color:#100a05"></div>
+            <div class="color" style="background-color:#372311"></div>
+            <div class="color" style="background-color:#5f3b1c"></div>
+            <div class="color" style="background-color:#865428"></div>
+            <div class="color" style="background-color:#ad6c34"></div>
+            <div class="color" style="background-color:#c9854b"></div>
+            <div class="color" style="background-color:#d5a072"></div>
+            <!-- <div class="color" style="background-color:#e1ba99"></div> -->
+            <!-- <div class="color" style="background-color:#f1bd76"></div>
+            <div class="color" style="background-color:#f5cc94"></div>
+            <div class="color" style="background-color:#f8dbb3"></div>
+            <div class="color" style="background-color:#fbe9d2"></div>
+            <div class="color" style="background-color:#fef8f1"></div> -->
+        </div>
+        <div class="textblock">
+            <div class="text">民國39-50年</div>
+            <div class="text">民國51-60年</div>
+            <div class="text">民國61-70年</div>
+            <div class="text">民國71-80年</div>
+            <div class="text">民國81-90年</div>
+            <div class="text">民國91-100年</div>
+            <div class="text">民國101-110年</div>
+            <!-- <div class="text">民國111-112年</div> -->
+            <!-- <div class="text">民國108年</div>
+            <div class="text">民國109年</div>
+            <div class="text">民國110年</div>
+            <div class="text">民國111年</div>
+            <div class="text">民國112年</div> -->
+        </div>
+    </div>
+    
+    
+</body>
+</html>

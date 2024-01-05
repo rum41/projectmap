@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新竹屋齡地圖</title>
+    <!-- <link rel="icon" href="data\1704293754.ico" type="image/x-icon"/> -->
+    <!-- leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- scale -->
+    <script src="node_modules/leaflet-graphicscale/dist/Leaflet.GraphicScale.min.js"></script>
+    <link rel="stylesheet" href="node_modules\leaflet-graphicscale\dist\Leaflet.GraphicScale.min.css">
+    
+    <!-- marker cluster -->
+    <script src="Leaflet.markercluster-1.4.1/dist/leaflet.markercluster-src.js"></script>
+    <script src="Leaflet.markercluster-1.4.1/src/MarkerCluster.js"></script>
+    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1\dist\MarkerCluster.css"/>
+    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1\dist\MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="./style/index.css">
+    <script type="module" src="./scripts/map.js"></script>
+
+    
+</head>
+<body>
+    <!-- Your map container will go here -->
+    <div id="map"></div>
+    <!-- <script type="module" src="./scripts/click.js"></script> -->
+    <!-- Include Leaflet library -->
+    
+
+    <!-- Your JavaScript code for the map goes here -->
+    <!-- <script>
+        // Initialize the map
+        var map = L.map('map',{
+            preferCanvas: true
+        }).setView([24.802009, 120.9869], 19);
+
+        // Add a tile layer (OpenStreetMap)
+        L.tileLayer('https://wmts.nlsc.gov.tw/wmts/EMAP6/default/GoogleMapsCompatible/{z}/{y}/{x}', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add a marker to the map
+        L.marker([24.802009, 120.9869]).addTo(map)
+            .bindPopup('A sample marker');
+
+    </script> -->
+</body>
+</html>
