@@ -28,7 +28,7 @@ const data= await fetchdata()
 const geodata=await(fetchgeo())
 
 const baseEMAP = L.tileLayer('https://wmts.nlsc.gov.tw/wmts/EMAP6/default/GoogleMapsCompatible/{z}/{y}/{x}', {
-  attribution:"|© OpenStreetMap",
+  attribution:"© OpenStreetMap|©Scale nerik",
   maxNativeZoom: 50,
   maxZoom: 19
 });
