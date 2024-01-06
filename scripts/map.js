@@ -12,6 +12,7 @@ const colordata={
 
 
 
+
 const fetchdata=async()=>{
   const res=await fetch('data/tgosdata.json');
   const data=await res.json();
